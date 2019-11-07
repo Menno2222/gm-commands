@@ -21,7 +21,7 @@ apt-get install apache2
 apt-get install php5 php5-mysql php-auth php5-xmlrpc libapache2-mod-php5 php5-mcrypt
 apt-get install phpmyadmin
 ```
-As these are installing you will be asked to set passwords. Make your passwords strong. It will ask you if you are using/want to install apache2 or lighttpd, choose apache2. Everything else is fairly self explanatory i.e. if it asks what your mysql password is type in your mysql password.
+   As these are installing you will be asked to set passwords. Make your passwords strong. It will ask you if you are using/want to install apache2 or lighttpd, choose apache2. Everything else is fairly self explanatory i.e. if it asks what your mysql password is type in your mysql password.
 3. Once all of this is done you need your servers ip, you get this by running ``ifconfig`` Once you have this ip open a web browser on another machine and navigate to ``yourserverip/phpmyadmin`` Login to phpmyadmin using the password you created in step 2. 
 4. Make a new database called ``kdxy`` and import ``kdxy2.sql``
 5. Open winscp and connect to a new site using SFTP. 
