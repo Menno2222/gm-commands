@@ -2,6 +2,7 @@
 ## Disclaimer: Most of these have been proven to work some have yet to be tested listing is updated as it goes please create an issue or a pull request if you have anything to add or remove.
 
 ### System Commands
+-------------------
 #### [Client to Server Commands](#Client-to-Server-Console-Commands)
 ``d_c2scmd``
 #### Changer render of mipmap/pixel. 0-10 high-low quality
@@ -52,6 +53,7 @@
 ``d_relogin`` 
 
 ### Information
+---------------
 #### Some wire boxes on in-game objects.
 ``d_boundbox``
 #### Show Dynamic NPC's ID in the order they were spawned.
@@ -70,6 +72,7 @@
 ``d_createtime``
 
 ### Show Debug info
+-------------------
 #### Something with .NET Protocol?
 ``d_rtdebug``
 #### Show/Hide 3D game information.
@@ -90,6 +93,7 @@
 ``d_minidump`` 
 
 ### ID Search
+-------------
 #### Search for a partial name of an item / mob / npc and get its ID in return
 ``d_query`` 
 #### Type an npc id and get back its coordinates (if its already in the autopath database)
@@ -100,6 +104,7 @@
 ``d_querymodel``
 
 ### ???
+-------
 #### Seems to be useless or not working.
 ``d_turnaround``
 
@@ -115,6 +120,7 @@
 ``d_namepos`` 
 
 ### Client to Server Console Commands
+-------------------------------------
 #### Gain 9500 gold
 ``d_c2scmd 1988``
 #### Gain 100 EB
