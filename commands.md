@@ -141,8 +141,8 @@
 ``d_c2scmd 10800 <ID> <QUANTITY>``
 #### Gain experience by amount(note this is affected by the servers exp rate and can result in receiving negative experience)
 ``d_c2scmd 10889 <value>``
-#### Spawns a mob/npc (NPCs that are spawned are not interactable)
-``d_c2scmd 10802 <MonsterID> <Num>``
+#### Spawns a mob/npc for the specified duration (NPCs that are spawned are not interactable)
+``d_c2scmd 10802 <MonsterID> <Spawnduration>``
 #### Fly but not broken 
 ``d_c2scmd 10803 66``
 
