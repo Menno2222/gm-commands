@@ -41,7 +41,7 @@
 ``d_ie <url>`` 
 #### Changes window title?
 ``d_title`` 
-#### Fly but only works when you have a high movement speed for flying without speed adjustments use [d_c2scmd fly](#Fly-but-not-broken)
+#### Fly but only works when you have a high movement speed. For flying without speed adjustments use [d_c2scmd fly](#Fly-but-not-broken)
 ``d_fly``
 #### Changes player runspeed values exceeding 5 cause rubberbanding due to server anti-cheat
 ``d_runspeed``
