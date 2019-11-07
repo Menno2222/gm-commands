@@ -73,7 +73,7 @@
 
 ### Show Debug info
 -------------------
-#### Something with .NET Protocol?
+#### Shows debug info
 ``d_rtdebug``
 #### Show/Hide 3D game information.
 ``d_a3dstat``
@@ -121,9 +121,11 @@
 
 ### Client to Server Console Commands
 -------------------------------------
+#### Drop gold on ground
+``d_c2scmd 20 <amount>``
 #### Gain gold relevant to the equation (level*100)
 ``d_c2scmd 1988``
-### Change pet mood maybe?
+#### Change pet mood maybe?
 ``d_c2scmd 1989 <id>``
 #### Gives exp + spirit(note this is affected by the servers exp rate and can result in receiving negative experience)
 ``d_c2scmd 1999``
