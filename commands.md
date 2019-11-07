@@ -130,7 +130,7 @@
 #### Add level 1 character
 ``d_c2scmd 2000``
 #### Create item with 1 minute timer(no idea how to change timer amount needs to be looked into)
-``d_c2scmd 2001 <ID>``
+``d_c2scmd 2001 <id>``
 #### Grants double experience for target player for a duration range of 0 to 14400 seconds.
 ``d_c2scmd 2009 <id>``
 #### Gain 100 EB
@@ -138,11 +138,11 @@
 #### Expand inventory slots by amount
 ``d_c2scmd 2016 <amount>``
 #### Spawns item by quantity on the ground
-``d_c2scmd 10800 <ID> <QUANTITY>``
+``d_c2scmd 10800 <id> <quantity>``
 #### Gain experience by amount(note this is affected by the servers exp rate and can result in receiving negative experience)
 ``d_c2scmd 10889 <value>``
 #### Spawns a mob/npc for the specified duration (NPCs that are spawned are not interactable)
-``d_c2scmd 10802 <MonsterID> <Spawnduration>``
+``d_c2scmd 10802 <id> <spawnduration>``
 #### Fly but not broken 
 ``d_c2scmd 10803 66``
 
