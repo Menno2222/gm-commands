@@ -16,7 +16,7 @@
 ``d_go x, y``
 #### Fly but only works when you have a high movement speed for flying without speed adjustments use ``d_c2scmd 10803 66``
 ``d_fly`` 
-#### [Client to Server Console Commands](#Client-to-Server-Console-Commands)
+#### [Client to Server Commands](#Client-to-Server-Console-Commands)
 ``d_c2scmd`` 
 #### Sight of your camera.
 ``d_viewradius`` 
