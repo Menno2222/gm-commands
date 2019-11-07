@@ -121,17 +121,44 @@
 
 ### Client to Server Console Commands
 -------------------------------------
-#### Gain 9500 gold
+#### Gain gold relevant to the equation (level*100)
 ``d_c2scmd 1988``
+### Change pet mood maybe?
+``d_c2scmd 1989 <id>``
+#### Gives exp + spirit(note this is affected by the servers exp rate and can result in receiving negative experience)
+``d_c2scmd 1999``
+#### Add level 1 character
+``d_c2scmd 2000``
+#### Create item with 1 minute timer(no idea how to change timer amount needs to be looked into)
+``d_c2scmd 2001 <ID>``
+#### Grants double experience for target player for a duration range of 0 to 14400 seconds.
+``d_c2scmd 2009 <id>``
 #### Gain 100 EB
 ``d_c2scmd 2014``
 #### Expand inventory slots by amount
 ``d_c2scmd 2016 <amount>``
-#### Create item with 1 minute timer(no idea how to change timer amount needs to be looked into)
-``d_c2scmd 2001 <ID>``
 #### Spawns item by quantity on the ground
 ``d_c2scmd 10800 <ID> <QUANTITY>``
+#### Gain experience by amount(note this is affected by the servers exp rate and can result in receiving negative experience)
+``d_c2scmd 10889 <value>``
 #### Spawns a mob/npc (NPCs that are spawned are not interactable)
 ``d_c2scmd 10802 <MonsterID> <Num>``
 #### Fly but not broken 
 ``d_c2scmd 10803 66``
+
+# GM Commands
+
+``gm_kickout_role`` 
+``gm_kickout_user`` 
+``gm_list_user``
+``gm_online_num``
+``gm_restart_sev``
+``gm_shutup_role``
+``gm_shutup_user``
+``gm_moveto_player``
+``gm_callin_player``
+``gm_broadcast``
+``gm_showid``
+``gm_forbid_role``
+``gm_trigger_chat``
+``gm_generate``
