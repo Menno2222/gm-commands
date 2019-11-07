@@ -1,29 +1,17 @@
 # Debug Commands
-### Regular Debug Commands
-#### Same thing as (F9) but without the Screenshot window.
-``d_cameramode``
-#### Some wire boxes on in-game objects.
-``d_boundbox``
-#### Something with .NET Protocol?
-``d_rtdebug``
-#### Show Dynamic NPC's ID in the order they were spawned.
-``d_npcid``
-#### Seems to be useless or not working.
-``d_runspeed`` 
-#### Move to X, Y cords. Use ``d_showpos`` to help you.
-``d_goto x, y`` 
-#### Move to the specified game coordinates
-``d_go x, y``
-#### Fly but only works when you have a high movement speed for flying without speed adjustments use ``d_c2scmd 10803 66``
-``d_fly`` 
+## Disclaimer: Most of these have been proven to work some have yet to be tested listing is updated as it goes please create an issue or a pull request if you have anything to add or remove.
+
+### System Commands
 #### [Client to Server Commands](#Client-to-Server-Console-Commands)
-``d_c2scmd`` 
+``d_c2scmd``
+#### Changer render of mipmap/pixel. 0-10 high-low quality
+``d_mipmapbias`` 
 #### Sight of your camera.
 ``d_viewradius`` 
-#### Return to character selection screen.
-``d_relogin`` 
-#### Seems to be useless or not working. Perhaps to use a skill?
-``d_skill`` 
+#### Seems to be useless or not working.
+``d_playerradius`` 
+#### Change the render of the trees. 0-4
+``d_treelod`` 
 #### Show/Hide Water 0-2
 ``d_render_water`` 
 #### Show/Hide Grasses 
@@ -36,58 +24,70 @@
 ``d_render_outline`` 
 #### Do not prevent the window from updating when it loses focus.
 ``d_rendernofocus``
-#### Seems to be useless or not working.
-``d_turnaround`` 
+#### Changes UI theme 0=old 1=new
+``d_theme``
+#### Change ingame time (client side only). Format: 10,00 (mean 10AM).
+``d_settimeofday`` 
+#### Same thing as (F9) but without the Screenshot window.
+``d_cameramode``
+#### Move to X, Y cords. Use ``d_showpos`` to help you.
+``d_goto x, y`` 
+#### Move to the specified game coordinates
+``d_go x, y``
+#### Display all purchased EB?
+``d_money``
+#### Open a url in the browser
+``d_ie <url>`` 
+#### Changes window title?
+``d_title`` 
+#### Fly but only works when you have a high movement speed for flying without speed adjustments use ``d_c2scmd 10803 66``
+``d_fly``
+#### Changes player runspeed values exceeding 5 cause rubberbanding due to server anti-cheat
+``d_runspeed``
+#### Seems to be useless or not working. Perhaps to use a skill?
+``d_skill``
+#### Seems to be useless or not working. Quests are known as Tasks may be related to completing a quest
+``d_task``
+#### Return to character selection screen.
+``d_relogin`` 
+
+### Information
+#### Some wire boxes on in-game objects.
+``d_boundbox``
+#### Show Dynamic NPC's ID in the order they were spawned.
+``d_npcid``
+#### Show/Hide the cords for every NPC, MOB, PLAYER (and you).
+``d_showpos``  
 #### Show the distance between your character and the cursor.
 ``d_testdist`` 
-#### Seems to be useless or not working.
-``d_gfx``
-#### Show/Hide the cords for every NPC, MOB, PLAYER (and you).
-``d_showpos`` 
-#### Seems to be useless or not working.
-``d_trnlayer`` 
+#### Show/Hide item/npc/character's ID instead of their name. You can also get a character's ID by ``CTRL + Right Click`` their name in chat.
+``d_showid`` 
+#### Show the server date and time.
+``d_getservertime`` 
+#### Show last login time
+``d_lastlogintime``
+#### Show character creation time
+``d_createtime``
+
+### Show Debug info
+#### Something with .NET Protocol?
+``d_rtdebug``
 #### Show/Hide 3D game information.
-``d_a3dstat`` 
+``d_a3dstat``
 #### Show/Hide computer and game resources.
-``d_gamestat`` 
-#### Change the render of the trees. 0-4
-``d_treelod`` 
+``d_gamestat``
+#### Display information related to debugging UI
+``d_uidebug``
 #### Show/Hide FPS in the right upper corner of the screen.
 ``d_fps`` 
-#### Seems to be useless or not working.
-``d_playerradius`` 
-#### Show/Hide character's ID instead of their name. You can also get a character's ID by ``CTRL + Right Click`` their name in chat.
-``d_showid`` 
+#### Shows a gfc from gfc.pck (requires dir location)
+``d_gfx``
 #### Seems to be useless or not working.
 ``d_skipframe`` 
 #### Seems to be useless or not working.
 ``d_modelupdate`` 
 #### Write dump, close the game and show the Report Bug window.
 ``d_minidump`` 
-#### Change ingame time (client side only). Format: 10,00 (mean 10AM).
-``d_settimeofday`` 
-#### Show the server date and time.
-``d_getservertime`` 
-#### Seems to be useless or not working. Quests are known as Tasks may be related to completing a quest
-``d_task`` 
-#### Changer render of mipmap/pixel. 0-10 high-low quality
-``d_mipmapbias`` 
-#### Seems to be useless or not working.
-``d_trncull`` 
-#### Maybe for make some changes on GS(gamed)? GS controls the servers rates(exp/drop/gold/spirit/etc) and who knows what else.
-``d_gscmd`` 
-#### Delete command?
-``d_delcmd`` 
-#### Changes window title?
-``d_title`` 
-#### Seems to be useless or not working.
-``d_namepos`` 
-#### Display all purchased EB?
-``d_money``
-#### Open a url in the browser
-``d_ie <url>``
-#### Show character creation time
-``d_createtime``
 
 ### ID Search
 #### Search for a partial name of an item / mob / npc and get its ID in return
@@ -97,7 +97,22 @@
 #### Search for a partial name of an NPC Service and get its ID in return
 ``d_queryservice`` 
 #### Type in a partial model path and it spits out the items that use it
-``d_querymodel`` 
+``d_querymodel``
+
+### ???
+#### Seems to be useless or not working.
+``d_turnaround``
+
+#### Seems to be useless or not working.
+``d_trnlayer`` 
+#### Seems to be useless or not working.
+``d_trncull`` 
+#### Maybe for make some changes on GS(gamed)? GS controls the servers rates(exp/drop/gold/spirit/etc) and who knows what else.
+``d_gscmd`` 
+#### Delete command?
+``d_delcmd``
+#### Seems to be useless or not working.
+``d_namepos`` 
 
 ### Client to Server Console Commands
 #### Gain 9500 gold
