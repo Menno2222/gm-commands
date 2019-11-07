@@ -11,7 +11,9 @@
 ### Seems to be useless or not working.
 ``d_runspeed`` 
 ### Move to X, Y cords. Use ``d_showpos`` to help you.
-``d_goto`` 
+``d_goto x, y`` 
+### Move to the specified game coordinates
+``d_go x, y``
 ### Fly but only works when you have a high movement speed for flying without speed adjustments use ``d_c2scmd 10803 66``
 ``d_fly`` 
 ### [Client to Server Console Commands](#Client-to-Server-Console-Commands)
@@ -22,9 +24,9 @@
 ``d_relogin`` 
 ### Seems to be useless or not working. Perhaps to use a skill?
 ``d_skill`` 
-### Show/Hide Water
+### Show/Hide Water 0-2
 ``d_render_water`` 
-### Show/Hide Grasses
+### Show/Hide Grasses 
 ``d_render_grass`` 
 ### Show/Hide Trees
 ``d_render_forest`` 
@@ -32,6 +34,8 @@
 ``d_render_shadow`` 
 ### Show/Hide Outline
 ``d_render_outline`` 
+### Do not prevent the window from updating when it loses focus.
+``d_rendernofocus``
 ### Seems to be useless or not working.
 ``d_turnaround`` 
 ### Show the distance between your character and the cursor.
@@ -46,7 +50,7 @@
 ``d_a3dstat`` 
 ### Show/Hide computer and game resources.
 ``d_gamestat`` 
-### Change the render of the trees.
+### Change the render of the trees. 0-4
 ``d_treelod`` 
 ### Show/Hide FPS in the right upper corner of the screen.
 ``d_fps`` 
@@ -66,7 +70,7 @@
 ``d_getservertime`` 
 ### Seems to be useless or not working. Quests are known as Tasks may be related to completing a quest
 ``d_task`` 
-### Changer render of mipmap/pixel.
+### Changer render of mipmap/pixel. 0-10 high-low quality
 ``d_mipmapbias`` 
 ### Seems to be useless or not working.
 ``d_trncull`` 
@@ -74,10 +78,26 @@
 ``d_gscmd`` 
 ### Delete command?
 ``d_delcmd`` 
-### Seems to be useless or not working. Might be related to changing a players title to the appropriate one
+### Changes window title?
 ``d_title`` 
 ### Seems to be useless or not working.
 ``d_namepos`` 
+### Display all purchased EB?
+``d_money``
+### Open a url in the browser
+``d_ie <url>``
+### Show character creation time
+``d_createtime``
+
+### ID Search
+#### Search for a partial name of an item / mob / npc and get its ID in return
+``d_query`` 
+#### Type an npc id and get back its coordinates (if its already in the autopath database)
+``d_querynpc`` 
+#### Search for a partial name of an NPC Service and get its ID in return
+``d_queryservice`` 
+#### Type in a partial model path and it spits out the items that use it
+``d_querymodel`` 
 
 ## Client to Server Console Commands
 ### Gain 9500 gold
