@@ -123,6 +123,8 @@
 -------------------------------------
 #### Drop gold on ground
 ``d_c2scmd 20 <amount>``
+#### Change class
+``d_c2scmd 1102 0 <id>``
 #### Gain gold relevant to the equation (level*100)
 ``d_c2scmd 1988``
 #### Change pet mood maybe?
