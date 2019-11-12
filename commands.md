@@ -143,6 +143,8 @@
 ``d_c2scmd 2016 <amount>``
 #### Makes target player spouse
 ``d_c2scmd 2020 <id or 0 for divorce>``
+#### Clears inventory
+``d_c2scmd 4444``
 #### Spawns item by quantity on the ground
 ``d_c2scmd 10800 <id> <quantity>``
 #### Gain experience by amount(note this is affected by the servers exp rate and can result in receiving negative experience)
