@@ -143,14 +143,24 @@
 ``d_c2scmd 2016 <amount>``
 #### Makes target player spouse
 ``d_c2scmd 2020 <id or 0 for divorce>``
+#### Jump to player
+``d_c2scmd 3015 <id>``
+#### Gain spirit
+``d_c2scmd 4441 <quantity>``
 #### Clears inventory
 ``d_c2scmd 4444``
+#### Drop full item stack
+``d_c2scmd 6050``
+#### Gain reputation
+``d_c2scmd 7000 <reputationid> <quantity>``
 #### Spawns item by quantity on the ground
 ``d_c2scmd 10800 <id> <quantity>``
 #### Gain experience by amount(note this is affected by the servers exp rate and can result in receiving negative experience)
 ``d_c2scmd 10889 <value>``
 #### Spawns a mob/npc for the specified duration (NPCs that are spawned are not interactable)
 ``d_c2scmd 10802 <id> <quantity> <spawnduration> 0``
+#### Spawns a mining item
+``d_c2scmd 10804 <id> ``
 #### Fly but not broken 
 ``d_c2scmd 10803 66``
 
