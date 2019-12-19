@@ -137,6 +137,8 @@
 ``d_c2scmd 2001 <id>``
 #### Grants double experience for target player for a duration range of 0 to 14400 seconds.
 ``d_c2scmd 2009 <id>``
+#### Teleport to location
+``d_c2scmd 2008 <area id> <x> <z>``
 #### Gain 100 EB
 ``d_c2scmd 2014``
 #### Expand inventory slots by amount
